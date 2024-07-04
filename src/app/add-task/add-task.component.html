@@ -1,0 +1,36 @@
+<form >
+    <div class="container">
+        <div class="row flex-column">
+            <div class="col pe-4">
+                <div class="form-group mt-3 d-flex justify-content-end">
+                    <button type="button" (click)="addTask()" class="btn btn-primary "> Add New</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col md-3 p-3">
+                    <table class="table table-bordered" (change)="onFormEdited()">
+                        <thead>
+                            <tr>
+                                <th>Sr.No.</th>
+                                <th>Name</th>
+                                <th>Title</th>
+                                <th>Status</th>
+                                <th>Due Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let listData of listData; let i = index">
+                                <td>{{ i + 1 }}</td>
+                                <td>{{ listData.name }}</td>
+                                <td>{{ listData.title }}</td>
+                                <!-- <td>{{ listData.description }}</td> -->
+                                <td>{{ listData.status }}</td>
+                                <td>{{ listData.duedate }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

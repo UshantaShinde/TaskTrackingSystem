@@ -1,0 +1,38 @@
+form {
+  margin: 20px;
+}
+
+.container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.table {
+  //margin-bottom: 1rem;
+ // margin: 0%;
+  padding: 30%;
+  color: #212529;
+  border-collapse: collapse;
+  border: 1px solid #dee2e6;
+}
+.table thead th {
+  background-color: #f1f1f1;
+  border-bottom: 2px solid #dee2e6;
+  text-align: center;
+}
+.table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;  
+}
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+.table th,
+.table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}

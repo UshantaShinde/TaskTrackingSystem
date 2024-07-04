@@ -1,0 +1,36 @@
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Name</th>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let listData of listData; let i = index">
+                            <td>{{ i + 1 }}</td>
+                            <td>{{ listData.name }}</td>
+                            <td>{{ listData.title }}</td>
+                            <td>{{ listData.status }}</td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <i class="fas fa-eye" (click)="viewItem(listData.title)"></i>
+
+                                    <i class="fa-regular fa-pen-to-square" (click)="editItem(listData.title)"></i>
+                                    
+                                    <i class="fas fa-trash" (click)="deleteItem(listData.title)"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

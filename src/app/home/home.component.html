@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="title"><br><br>
+        <h1>Task Tracking Application</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col md-3 p-5">
+            <div class="card">
+                <div class="card-body" >
+                    <h6>
+                        <div class="card-title">
+                            <h1>Total Task</h1>
+                        </div>
+                    </h6>
+                    <p  ><br>The Total tasks are <br><br> {{ totalTasksCount }}</p><br>
+                    <button type="submit" class="btn btn-primary" (click)="navigate('all')" > View</button>
+                </div>
+            </div>
+        </div>
+        <div class="col md-3 p-5">
+            <div class="card">
+                <div class="card-body">
+                    <h6>
+                        <div class="card-title">
+                            <h1>Completed Task</h1>
+                        </div>
+                    </h6>
+                    <p><br>The total completed tasks are <br><br> {{ completedTasksCount }}</p><br>
+                    <button type="button" class="btn btn-success" (click)="navigate('completed')"> View</button>
+                </div>
+            </div>
+        </div>
+        <div class="col md-3 p-5">
+            <div class="card">
+                <div class="card-body">
+                    <h6>
+                        <div class="card-title">
+                            <h1>Pending Task</h1>
+                        </div>
+                    </h6>
+                    <p><br>The total Pending tasks are <br> <br>{{ pendingTasksCount }}</p><br>
+                    <button type="submit" class="btn btn-danger" (click)="navigate('pending')"> View </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
